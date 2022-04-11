@@ -1,0 +1,1361 @@
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-ExtraLight.woff2") format("woff2"), url("../fonts/Raleway-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Light.woff2") format("woff2"), url("../fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Raleway;
+  font-size: 1.6rem;
+  background-color: #ffffff;
+}
+body.--noscroll {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.header.--primary .header__nav {
+  color: #e0bea2;
+}
+.header.--primary .header__item {
+  color: #252525;
+}
+.header.--primary .header__item svg path {
+  fill: #e0bea2;
+}
+.header.--primary .header__item.search svg path {
+  fill: #252525;
+}
+.header.--primary .burger span, .header.--primary .burger::before, .header.--primary .burger::after {
+  background-color: #e0bea2;
+}
+.header.--primary .header__link svg:hover path {
+  fill: #d3a37c;
+}
+.header.--primary .header__link:hover {
+  color: #d3a37c;
+}
+.header.--primary .select::after {
+  border-top: 0.2rem solid #252525;
+  border-right: 0.2rem solid #252525;
+}
+.header.--primary .select.active .option__item {
+  border-top: 1px solid #e0bea2;
+}
+.header__nav {
+  min-height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+.header__items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.header__item {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.1rem;
+  color: #ffffff;
+}
+.header__item--links:not(:last-child) {
+  margin-right: 2.5rem;
+}
+.header__item--links--secondary {
+  display: none;
+}
+.header__item--select:not(:last-child) {
+  margin-right: 2rem;
+}
+.header__item--buttons:not(:last-child) {
+  margin-right: 3rem;
+}
+.header__link {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+}
+.header__link svg:hover path {
+  fill: #e6e6e6;
+}
+.header__link:hover {
+  color: #e6e6e6;
+}
+
+.link__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+}
+
+.input__search {
+  background: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  width: 0;
+  transition: 0.5s;
+  opacity: 0;
+  display: none;
+}
+.input__search::placeholder {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  opacity: 0.5;
+  color: #252525;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 2.5rem;
+  transition: width 0.5s;
+}
+
+.search:hover,
+.search.active {
+  width: 30rem;
+  background-color: #ffffff;
+  border: #252525 0.05rem solid;
+  border-radius: 2rem;
+}
+.search:hover .link__search,
+.search.active .link__search {
+  margin-right: 2rem;
+  transition: 0.5s;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.search:hover .input__search,
+.search.active .input__search {
+  display: inline;
+  width: 100%;
+  opacity: 1;
+}
+.search:hover .link__search svg path,
+.search.active .link__search svg path {
+  fill: #252525;
+}
+
+.search.active {
+  border-color: #e0bea2;
+}
+
+.burger {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.burger span, .burger::before, .burger::after {
+  display: block;
+  content: "";
+  background-color: #ffffff;
+  height: 4px;
+}
+.burger span {
+  width: 26px;
+  transition: all 0.2s ease-in;
+}
+.burger::before {
+  margin-bottom: 6px;
+  width: 34px;
+  transition: all 0.2s ease-in;
+}
+.burger::after {
+  margin-top: 6px;
+  transition: all 0.2s ease-in;
+  width: 18px;
+}
+.burger.--active ~ .header__items--links .header__item--links--primary {
+  display: none;
+}
+.burger.--active ~ .header__items--links .header__item--links--secondary {
+  display: block;
+}
+.burger.--active ~ .header__logo {
+  display: none;
+}
+.burger.--active ~ .header__items .header__item--select {
+  display: none;
+}
+.burger.--active ~ .header__items .header__item--buttons {
+  display: none;
+}
+.burger.--active::before {
+  width: 3.4rem;
+  margin: 0;
+  transform: rotate(45deg) translateY(50%);
+}
+.burger.--active::after {
+  width: 3.4rem;
+  transform: rotate(-45deg) translateY(-50%);
+  margin: 0;
+}
+.burger.--active span {
+  display: none;
+}
+.burger-menu {
+  position: fixed;
+  overflow: auto;
+  bottom: 0;
+  left: -100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(100% - 7.5rem);
+  background-color: #ffffff;
+  transition: left 0.2s ease-in-out;
+}
+.burger-menu__list {
+  padding: 8rem 2rem 0 2rem;
+}
+.burger-menu__item {
+  padding: 2rem 0;
+  border-top: #252525 1px solid;
+}
+.burger-menu__item:last-child {
+  border-bottom: 1px solid #252525;
+}
+.burger-menu__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #252525;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.9rem;
+}
+.burger-menu__item a svg {
+  margin-right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+.burger-menu__item a svg path {
+  fill: #e0bea2;
+}
+.burger-menu__contacts {
+  list-style: none;
+  padding: 3rem 0;
+}
+.burger-menu__contacts li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.burger-menu__contacts a {
+  color: #252525;
+  font-weight: 200;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-decoration: none;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+}
+.select.active::after {
+  transform: rotate(-45deg);
+}
+.select.active .option {
+  display: block;
+}
+.select.active .option__item {
+  padding: 0.3rem 0;
+  border-top: 1px solid #ffffff;
+}
+.select::after {
+  display: inline-block;
+  content: "";
+  margin-left: 1rem;
+  box-sizing: border-box;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-top: 0.2rem solid #ffffff;
+  border-right: 0.2rem solid #ffffff;
+  transform: rotate(135deg) translate(-25%, 0);
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.select label {
+  cursor: pointer;
+}
+.select .option {
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 2.1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media (max-width: 740px) {
+  .profile {
+    display: none;
+  }
+
+  .header__nav {
+    min-height: 2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__nav.--active {
+    align-items: center;
+  }
+
+  .header__logo {
+    max-height: 2rem;
+    order: 1;
+  }
+
+  .--currency {
+    position: absolute;
+    top: 8.5rem;
+    right: 120%;
+    transition: right 0.2s ease-in-out;
+  }
+
+  .header__items--buttons {
+    order: 2;
+  }
+
+  .select {
+    line-height: 1.9rem;
+  }
+
+  .header__link img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .header__item--select:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .header__items--links {
+    display: none;
+  }
+
+  .header__item--links:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .search {
+    position: absolute;
+    top: 8.5rem;
+    left: -100%;
+    transition: left 0.2s ease-in-out;
+  }
+
+  .burger.--menu ~ .header__logo {
+    display: block;
+  }
+  .burger.--menu ~ .header__items .select {
+    display: flex;
+  }
+  .burger.--menu ~ .header__items .select.--currency {
+    right: 2rem;
+    color: #252525;
+    background-color: #ffffff;
+  }
+  .burger.--menu ~ .header__items .select.--currency::after {
+    border-color: #252525;
+  }
+  .burger.--menu ~ .header__items .select.--currency .option {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+  }
+  .burger.--menu ~ .header__items .select.--currency .option__item {
+    border-color: #e0bea2;
+  }
+  .burger.--menu ~ .header__items .search {
+    display: flex;
+    left: 2rem;
+    width: 26rem;
+    background-color: #ffffff;
+    border: #252525 0.05rem solid;
+    border-radius: 2rem;
+  }
+  .burger.--menu ~ .header__items .search svg path {
+    fill: #252525;
+  }
+  .burger.--menu ~ .header__items .search .link__search {
+    margin-right: 2rem;
+    transition: 0.5s;
+    width: 2rem;
+    height: 2rem;
+  }
+  .burger.--menu ~ .header__items .search .input__search {
+    display: inline;
+    width: 100%;
+    opacity: 1;
+  }
+  .burger.--menu ~ .header__items .favorites,
+.burger.--menu ~ .header__items .cart {
+    display: block;
+  }
+  .burger.--menu ~ .burger-menu {
+    left: 0;
+  }
+}
+.bread-crumbs {
+  display: flex;
+}
+.bread-crumbs li {
+  display: flex;
+  margin-right: 1rem;
+  align-items: center;
+}
+.bread-crumbs li:not(:last-child)::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-top: 0.2rem solid #e0bea2;
+  border-right: 0.2rem solid #e0bea2;
+  transform: rotate(45deg);
+}
+.bread-crumbs__item {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.hero {
+  height: 90vh;
+  box-sizing: content-box;
+  background: url("../img/hero__bg1.png") left top no-repeat, url("../img/hero__bg2.png") center top no-repeat, url("../img/hero__bg3.png") right top no-repeat;
+  background-size: 33.35%;
+  text-align: center;
+}
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.hero__title {
+  font-weight: 300;
+  font-size: 4.6rem;
+  line-height: 5.4rem;
+  color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.hero__title::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 120px;
+  background-color: #ffffff;
+}
+.hero__link {
+  display: flex;
+  gap: 0.5rem;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+.hero__link::after {
+  content: url("../img/svg/arrow_right.svg");
+}
+
+@media (max-width: 1266px) {
+  .hero {
+    background: url("../img/hero__bg1.png") left top no-repeat, url("../img/hero__bg2.png") right top no-repeat;
+    background-size: 50%;
+  }
+}
+@media (max-width: 548px) {
+  .hero {
+    background: url("../img/hero__bg1.png") center top no-repeat;
+    background-size: cover;
+  }
+
+  .hero__title {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+
+  .hero__link {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+}
+.category {
+  margin-top: 10rem;
+}
+.category__title {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 3.6rem;
+  line-height: 4.2rem;
+}
+.category__block {
+  position: relative;
+  margin-top: 5rem;
+}
+.category__block .btn {
+  position: absolute;
+  background-color: #e0bea2;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category__block .btn svg {
+  width: 4rem;
+  height: 4rem;
+}
+.category__block .btn--next {
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+.category__block .btn--prev {
+  left: 2rem;
+  top: 50%;
+  display: none;
+  transform: rotate(-180deg) translateY(50%);
+  z-index: 1000;
+}
+.category__items {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.category__items::-webkit-scrollbar {
+  height: 0;
+}
+.category__item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 27.4rem;
+  height: 45rem;
+  position: relative;
+}
+.category__item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.category__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.category__subtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  padding: 1rem 0;
+  background-color: rgba(224, 190, 162, 0.75);
+  backdrop-filter: blur(6px);
+}
+
+@media (max-width: 548px) {
+  .category {
+    margin-top: 6rem;
+  }
+  .category__title {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+  .category__block {
+    margin-top: 3rem;
+  }
+  .category__block .btn svg {
+    width: 3rem;
+    height: 3rem;
+  }
+  .category__item {
+    height: 23rem;
+    flex-basis: 16.5rem;
+  }
+  .category__subtitle {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    padding: 0.5rem 0;
+  }
+}
+.novelties {
+  margin: 10rem auto 0;
+  max-width: 60rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+.novelties__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3.6rem;
+  line-height: 4.2rem;
+  text-align: center;
+}
+.novelties__input {
+  width: 100%;
+  margin-top: 5rem;
+  padding: 1.5rem 0;
+  border: #252525 0.05rem solid;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 200;
+  text-align: center;
+}
+.novelties__input::placeholder {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: rgba(37, 37, 37, 0.5);
+}
+.novelties__input:focus, .novelties__input:active {
+  border: #e0bea2 0.05rem solid;
+}
+.novelties__btn {
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+  background-color: #e0bea2;
+  border: none;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+}
+.novelties__btn:active {
+  box-shadow: inset 0px 3px 7px rgba(37, 37, 37, 0.15);
+  background-color: #cca88a;
+}
+.novelties__notice {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 200;
+}
+
+@media (max-width: 548px) {
+  .novelties {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 1.2rem 0;
+  }
+  .novelties__title {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+  .novelties__input {
+    margin-top: 3rem;
+  }
+  .novelties__input::placeholder {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .novelties__btn {
+    margin-top: 1.5rem;
+  }
+  .novelties__notice {
+    margin-top: 1.5rem;
+  }
+}
+.catalog {
+  margin-top: 3rem;
+}
+
+.container--catalog {
+  display: flex;
+}
+
+.categories {
+  margin-right: 3rem;
+}
+.categories__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.categories__btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #252525;
+}
+
+.title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #252525;
+}
+
+.products__filters {
+  display: flex;
+  gap: 3rem;
+}
+.products__filter {
+  display: flex;
+  align-items: center;
+}
+.products__filter::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-top: 0.2rem solid #e0bea2;
+  border-right: 0.2rem solid #e0bea2;
+  transform: rotate(135deg);
+  cursor: pointer;
+}
+.products__filter label {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+.products__select {
+  display: none;
+  vertical-align: baseline;
+}
+
+.footer {
+  margin-top: 10rem;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.footer__item {
+  display: block;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-decoration: none;
+  color: #252525;
+}
+.footer__item:not(:first-child) {
+  margin-top: 1rem;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.footer__link {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+.footer__link--insta {
+  background: url("../img/svg/icon_insta.svg") center no-repeat;
+}
+.footer__link--tg {
+  background: url("../img/svg/icon_tg.svg") center no-repeat;
+}
+.footer__copyright {
+  margin: 5rem 0 1rem;
+  text-align: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    margin-top: 6rem;
+  }
+  .footer__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__title {
+    margin-bottom: 0.5rem;
+    position: relative;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+  .footer__title::after {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    background: url("../img/svg/arrow_bottom-primary.svg") center no-repeat;
+    transition: 0.3s;
+  }
+  .footer__items {
+    width: 100%;
+    border-bottom: 0.3px solid #252525;
+  }
+  .footer__items:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .footer__items.active {
+    border: none;
+  }
+  .footer__items.active .footer__item {
+    display: flex;
+  }
+  .footer__items.active .footer__title::after {
+    transform: rotate(180deg) translateY(50%);
+  }
+  .footer__item {
+    display: flex;
+    justify-content: center;
+    display: none;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  .footer__social {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__copyright {
+    margin: 3rem 0 0.5rem;
+  }
+}
